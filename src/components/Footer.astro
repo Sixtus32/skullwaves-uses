@@ -1,13 +1,14 @@
 ---
+export interface Props {
+	property ?: string;
+	site ?: string;
+}
+
+const { property = '', site = '' } = Astro.props
+
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<footer class="text-zinc-50 p-4 text-center"> 
+	&copy; {today.getFullYear()} <a href={ site } >{ property }</a> All rights reserved.
 </footer>
-<style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
-</style>
