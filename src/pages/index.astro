@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, NAME, HOMEPAGE_URL } from '../config';
 import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
 import { TiArrowRightThick } from "react-icons/ti";
+import Masthead from '../components/Masthead.astro'
 ---
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ import { TiArrowRightThick } from "react-icons/ti";
 	<Body>
 		<Header title={ SITE_TITLE } />
 		<main class="pt-[56px]">
+			<Masthead/>
 			<h1 class="font-mplus text-center">What's up today</h1>	
 			<Content>
 				<section>
