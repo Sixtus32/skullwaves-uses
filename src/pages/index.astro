@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import Body from '../components/Body.astro';
 ---
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	
 	</head>
-	<body>
+	<Body>
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1 class="text-4xl">🧑‍🚀 Hello, Sixtus!</h1>
@@ -47,5 +48,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 			</p>
 		</main>
 		<Footer />
-	</body>
+	</Body>
 </html>
