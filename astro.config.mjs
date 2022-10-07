@@ -7,9 +7,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site:'https://blog.skullwaves.io',
-  integrations: [sitemap(), react(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  }), tailwind()]
+  integrations: [sitemap(), react(), image(), tailwind()]
 });
 
  
