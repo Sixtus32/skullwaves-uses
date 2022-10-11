@@ -7,6 +7,7 @@ import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
 import { TiArrowRightThick } from "react-icons/ti";
 import Masthead from '../components/Masthead.astro';
+import CreatedWithSection from '../components/CreatedWithSection.astro';
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -56,6 +57,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
 						))}
 					</ul>
 				</section>
+				<CreatedWithSection/>
 			</Content>
 		</main>
 		<Footer property={ NAME }  site={ HOMEPAGE_URL }/>
