@@ -4,6 +4,7 @@ import { SITE_TITLE, HOMEPAGE_URL, GITHUB_URL } from '../config';
 import { IoLogoGithub } from 'react-icons/io5/index.js';
 import FootprintIcon from '../components/icons/footprint.tsx';
 import ThemeToggleButton from '../components/ThemeToggleButton.tsx'
+import DropdownMenu from '../components/DropdownMenu.tsx'
 ---
 
 
@@ -21,7 +22,8 @@ import ThemeToggleButton from '../components/ThemeToggleButton.tsx'
 				<HeaderLink href={ GITHUB_URL }target="_blank"><IoLogoGithub/>Source</HeaderLink>
 			</div>
 			<div class="flex-1"></div>
-			<ThemeToggleButton client:load/>
+			<ThemeToggleButton client:visible/>
+			<DropdownMenu client:visible/>
 		</nav>
 	</div>
 </header>
